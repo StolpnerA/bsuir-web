@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       menuItems: [],
-      newItem: ""
+      newItem: '',
     };
   },
   created() {
@@ -28,17 +28,17 @@ export default {
   },
   methods: {
     getMenuItems() {
-      this.menuItems = JSON.parse(localStorage.getItem("menuItems")) || [];
+      this.menuItems = JSON.parse(localStorage.getItem('menuItems')) || [];
     },
     addNewItem() {
       console.log(this.newItem);
       this.menuItems.push({
         id: this.menuItems.length + 1,
-        title: this.newItem
+        title: this.newItem,
       });
-      localStorage.setItem("menuItems", JSON.stringify(this.menuItems));
-    }
-  }
+      localStorage.setItem('menuItems', JSON.stringify(this.menuItems));
+    },
+  },
 };
 </script>
 
@@ -49,4 +49,3 @@ export default {
   max-width: 300px;
 }
 </style>
-
