@@ -31,6 +31,7 @@ export default {
       this.menuItems = JSON.parse(localStorage.getItem('menuItems')) || [];
     },
     addNewItem() {
+      if (!this.newItem) return;
       console.log(this.newItem);
       this.menuItems.push({
         id: this.menuItems.length + 1,

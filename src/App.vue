@@ -17,4 +17,10 @@ export default {
 
 
 <style lang="scss">
+#app {
+  font-size: 4vmin;
+  display: flex;
+  max-width: 500px;
+  justify-content: space-between;
+}
 </style>
