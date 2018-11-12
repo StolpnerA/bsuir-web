@@ -12,12 +12,12 @@
 
 <script>
 export default {
-  name: "home",
+  name: 'home',
   data() {
     return {
       contents: null,
       content: null,
-      newContent: ""
+      newContent: '',
     };
   },
   created() {
@@ -25,15 +25,15 @@ export default {
   },
   methods: {
     getContent() {
-      this.contents = JSON.parse(localStorage.getItem("contents")) || {};
-      this.content = this.contents[this.$route.params.id] || "";
+      this.contents = JSON.parse(localStorage.getItem('contents')) || {};
+      this.content = this.contents[this.$route.params.id] || '';
     },
     addNewContent() {
       console.log(this.newContent);
       this.contents[this.$route.params.id] = this.newContent;
-      localStorage.setItem("contents", JSON.stringify(this.contents));
+      localStorage.setItem('contents', JSON.stringify(this.contents));
       this.content = this.newContent;
-    }
-  }
+    },
+  },
 };
 </script>
