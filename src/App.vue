@@ -8,7 +8,7 @@
 #app {
   font-size: 4vmin;
   display: flex;
-  max-width: 500px;
+  max-width: 1000px;
   justify-content: space-between;
 }
 </style>
